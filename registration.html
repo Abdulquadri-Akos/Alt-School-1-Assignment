@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alt School - Assignment</title>
+  </head>
+  <body>
+    <a href="#main" class="skip-link button">Skip to main</a>
+
+    <!--Navigation-->
+    <nav aria-label="Main Navigation Menu">
+      <ul>
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./registration.html">AltSchool Registaton Form</a></li>
+      </ul>
+    </nav>
+
+    <!--Main Content-->
+    <main id="main">
+      <div>
+        <h2>Application Form</h2>
+        <p>Fill in your details</p>
+      </div>
+      <form action="#">
+        <div class="form-control">
+          <label for="fname">First Name</label>
+          <input type="text" name="name" required />
+
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" required />
+        </div>
+
+        <div class="form-control">
+          <label for="gender">Gender</label>
+          <select name="gender" id="gender" required>
+            <option value="" disabled selected hidden>Select gender</option>
+            <option value="male">Male</option>
+            <option value="femake">Female</option>
+          </select>
+
+          <label for="date">Date of Birth:</label>
+          <input type="date" name="date" required />
+        </div>
+
+        <div class="form-control">
+          <label for="email">Enail Address</label>
+          <input type="email" name="email" required />
+
+          <label for="education">Education Level</label>
+          <select name="education" id="education" required>
+            <option value="" disabled selected hidden>
+              Select level of education
+            </option>
+            <option value="bsc">Bsc</option>
+            <option value="msc">Msc</option>
+            <option value="diploma">Diploma</option>
+            <option value="doctorate">Doctorate (PhD)</option>
+            <option value="highschool">High School / Secondary School</option>
+            <option value="undergraduate">Under Graduate</option>
+            <option value="juniorschool">Junior / Middle School</option>
+            <option value="postgraduate">Post Graduate</option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label for="country">Country</label>
+          <input
+            type="text"
+            name="country"
+            placeholder="Select your country"
+            required
+          />
+
+          <label for="state">State / City of Residence</label>
+          <input
+            type="text"
+            name="state"
+            placeholder="Enter your state of residence"
+            required
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="employment">Employment Status</label>
+          <select name="employment" id="employment" required>
+            <option value="" disabled selected hidden>
+              Select employment status
+            </option>
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="selfemployed">Self-Employed</option>
+          </select>
+
+          <label for="phone">Phone number</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="08188877389"
+            maxlength="11"
+            required
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="school">Choose School</label>
+          <select name="school" id="school" required>
+            <option value="" disabled selected hidden>Select school</option>
+            <option value="school_economy">School of Creative Economy</option>
+            <option value="school_business">School of Business</option>
+          </select>
+
+          <!--Based on the course selected -->
+          <label for="course">Choose Course of Study</label>
+          <select name="course" id="course" required>
+            <option value="" disabled selected hidden>
+              Select course of study
+            </option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label for="hear">How did hear from about us</label>
+          <select name="hear" id="hear" required>
+            <option value="" disabled selected hidden>Select channel</option>
+            <option value="twitter">Twitter</option>
+            <option value="facebook">Facebook</option>
+            <option value="linkedin">Linkedin</option>
+            <option value="youtube">Yotube</option>
+            <option value="friend">Friend</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="instagram">Instragram</option>
+            <option value="billboard">Billboard</option>
+          </select>
+
+          <!--Based on the course selected -->
+          <label for="discount">Scholarship/Discount Code (optional)</label>
+          <input
+            type="text"
+            name="discount"
+            id="discount"
+            placeholder="Scholarship or student ID or discount codes"
+          />
+        </div>
+
+        <div>
+          By clicking continue, I agree to Terms of Use and acknowledge that I
+          have read the Privacy Policy.
+        </div>
+        <input type="button" value="Proceed" />
+      </form>
+    </main>
+  </body>
+</html>
